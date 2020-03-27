@@ -44,8 +44,8 @@ void ApplyPatches( )
 
 	int Nop = 0x60000000, branch = 0x4BFFFE70;
 	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004BD584 : 0x00449F3C ), &Nop, 4 );
-	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004C8EC4 : 0x00449F3C ), &Nop, 4 );
-	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004C8ED0 : 0x00449F3C ), &Nop, 4 );
-	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004C8EDC : 0x00449F3C ), &branch, 4 );
+	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004C8EC4 : 0x0045690C ), &Nop, 4 );
+	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004C8ED0 : 0x00456918 ), &Nop, 4 );
+	sys_dbg_write_process_memory( ( std::uint64_t )( IsMultiplayer( ) ? 0x004C8EDC : 0x00456924 ), &branch, 4 );
 
 }

@@ -25,7 +25,6 @@ char* Scr_LoadRawFile_FastFileHook( int inst, const char *filename, const char *
 
 			int FileLength = GetFileSize( RawFileBuffer );
 
-
 			char* scriptBuffer = (char*)Hunk_AllocateTempMemoryHigh( FileLength + 1 );
 
 			if ( scriptBuffer )
